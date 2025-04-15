@@ -11,9 +11,9 @@
 body {
     padding-top: 40px;
     /*borda do topo da pagina, perceba que mexendo nisso altera o logo da imagem*/
-    padding-right: 100px;
+    padding-right: 6vw;
     /*Mesmo conceito de cima, aplicando bordas do lado direito*/
-    padding-left: 100px;
+    padding-left: 6vw;
     /*Mesmo conceito de cima, aplicando bordas do lado esquedo*/
 }
 
@@ -29,11 +29,13 @@ body {
 }
 
 .container-text {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .box-image {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-top: 5px;
@@ -127,4 +129,62 @@ button {
     clip-path: circle(580px at right 710px);
     z-index: -1;
 
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .container-text,
+    .box-image {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    span {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    span {
+        font-size: 40px;
+    }
+
+    .starbucks {
+        width: 160px;
+    }
+
+    .logo-starbucks {
+        width: 60px;
+    }
+
+    .button-menu {
+        width: 40px;
+    }
+
+    .circulo {
+        clip-path: circle(400px at right 300px);
+    }
 }
