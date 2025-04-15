@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+
+}
+
+body {
+    padding-top: 40px;
+    /*borda do topo da pagina, perceba que mexendo nisso altera o logo da imagem*/
+    padding-right: 100px;
+    /*Mesmo conceito de cima, aplicando bordas do lado direito*/
+    padding-left: 100px;
+    /*Mesmo conceito de cima, aplicando bordas do lado esquedo*/
+}
+
+.content {
+    width: 100%;
+    /*Largura da tela*/
+    display: flex;
+    /*Permite que altere a posição dos elementos na tela*/
+    justify-content: space-between;
+    /*Permite justificar/alinhar os elementos*/
+    align-items: center;
+    /*Permite alinharos componetes na vertical*/
+}
+
+.container-text {
+    width: 500px;
+}
+
+.box-image {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+    /*o tamanho da fonte*/
+    font-weight: 500;
+    /*largura da fonte, o peso*/
+
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    /*o tamanho da fonte*/
+    font-weight: 900;
+    /*largura da fonte, o peso*/
+
+}
+
+p {
+    font-size: 16px;
+
+}
+
+button {
+
+    background: #017143;
+    color: #fff;
+    border-radius: 30px;
+    /* Arredontar a borda do button*/
+    border: none;
+    /*Para deixar sem borda*/
+    cursor: pointer;
+    /*transformar o cursor em uma mão*/
+    padding: 10px;
+    /*dar espaço ao button*/
+    margin-top: 30px;
+    /*altera altura do button, a altura referente ao texto*/
+}
+
+.logo-starbucks {
+    width: 80px;
+    /*largura da imagem*/
+    transform: translateY(-15);
+    /* efeito de fazer subir o copo no eixo Y*/
+}
+
+.starbucks {
+
+    width: 210px;
+    /*largura da imagem*/
+    margin-top: 10%;
+}
+
+
+.button-menu {
+    width: 50px;
+    /*largura da imagem*/
+    transition: 1s;
+    /* velocidade da animação da imagem*/
+    cursor: pointer;
+    /*Ponteiro do mouse*/
+    margin: 15px;
+    /*distancia de uma imagem na outra.*/
+
+
+}
+
+.button-menu:hover {
+    transform: translateY(-25px);
+    /* efeito na imagem*/
+
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(580px at right 710px);
+    z-index: -1;
+
+}
